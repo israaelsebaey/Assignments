@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+.header{
+   width: 80%;
+   height: 70px;
+   margin: auto;
+   padding:10px 0;
+   /* border: 1px solid #000; */
+}
+.header .left-sec{
+    width: 60%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 2px;
+    float: left;
+    /* border: 1px solid #000; */
+}
+.header .logo,.header .nav,
+.header .text
+{
+    display: inline-block;
+    vertical-align:middle;
+}
+.header .text span{
+    font-size: 18px;
+}
+.header .nav{
+    margin-left: 80px;
+}
+.header ul{
+    list-style: none;
+}
+.header ul,.header .text{
+    margin-top: -5px;
+} 
+.header ul li{
+    display: inline-block;
+    font-size: 18px;
+    color: #494a4d;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.header ul li:hover{
+    opacity: 0.8;
+}
+.header .right-sec{
+    width: 20%;
+    height: 50px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 2px;
+    line-height: 50px;
+    /* border: 1px solid #000; */
+}
+.header .right-sec .register{
+    /* border: 1px solid #000; */
+    position: relative;
+}
+.header .register button{
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    background-color: #ff757c;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transition: 0.5s;
+}
+.header .register button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.header .register i{
+    position: absolute;
+    font-size: 20px;
+    top: 15px;
+    right: 90px;
+}
+.main{
+    width: 80%;
+    height: 80vh;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: auto;
+    background-image: url('images/4.jpeg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+.main .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    border-radius: 20px;
+}
+.main .title{
+    position: absolute;
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 160px;
+}
+.main .title h1{
+    font-size: 45px;
+    line-height: 1.2;
+}
+.main .title p{
+    margin-left: 7px;
+}
+.main .search{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.main .search .items{
+    width: 280px;
+    height:70px;
+    margin: 30px 20px;
+    display: inline-block;
+    border: 1px solid #abaeb0;
+    border-radius: 10px;
+    position: relative;
+}
+.main .search .items:first-of-type{
+    margin-left: 5cap;
+}
+.main .search .items:last-of-type{
+    width: 150px;
+}
+.main .items .location{
+    position: absolute;
+    width: 92%;
+    /* border: 1px solid #000; */
+    margin:10px;
+}
+.main .content input{
+    border: 0;
+}
+.main .content input:focus{
+    outline: 0;
+}
+.main .content i{
+    float: right;
+    font-size: 20px;
+    color: #ff757c;
+}
+.clear{
+    clear: both;
+}
+.main .search .items:last-of-type{
+    position: absolute;
+    border:0;
+}
+.main .search .items:last-of-type button{
+    height: 100%;
+    width: 140px;
+    background-color: #ff757c;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.main .search .items:last-of-type button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
