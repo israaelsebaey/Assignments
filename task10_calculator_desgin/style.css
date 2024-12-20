@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cal-app{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, #e8c3ff,#f2ddff);
+    position: relative;
+}
+.circle{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #a411ff;
+    border-radius: 50%;
+    box-shadow: 30px 30px 100px #a411ff8a,-30px -30px 100px #a411ff89;
+}
+.cal-body{
+    width: 280PX;
+    height: 550px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 10px;
+    box-shadow: -15px 17px 17px rgba(10,10,10,0.25);       
+}
+.circle,.cal-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.input-num{
+    height: 40px;
+    margin:40px auto;
+}
+.input-num input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    direction: rtl;
+    background-color: transparent;
+}
+.input-num input:focus{
+    outline: none;
+}
+.input-num p{
+    text-align: right;
+}
+.input-num p i{
+    font-size: 10px;
+}
+.close{
+    border-bottom: 1px solid #ddd;
+    margin: 100px auto;
+    position: relative;
+}
+.close i{
+    position: absolute;
+    right: 0;
+    top: -25px;
+    font-size: 18px;
+    color: #484848;
+    transition: 0.5s;
+}
+.close i:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.input-num,.close,.boxes{
+    width: 90%;
+}
+.boxes{
+    height: 300px;
+    margin:-90px auto;
+}
+.box{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box .item{
+   width: 40px;
+   height: 40px;
+   background-color: #e9c5ff;
+   border-radius: 50%;
+   box-shadow: 2px 2px 2px #0000007b;
+   transition: 0.5s;
+   line-height: 40px;
+}
+.box .item:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(.96);
+    box-shadow: 2px 2px 5px #00000057;
+}
+.box .item p{
+    text-align: center;
+    font-size: 18px;
+    
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box2 .item, .box3 .item,
+.box4 .item,.box5 .item{
+    background-color: #fff;
+}
+
+@media (max-width:430px) {
+    .circle{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (max-width:360px){
+    .circle{
+        width: 320px;
+        height: 320px;
+    }
+    .cal-body{
+        width: 260px;
+    }
+}
