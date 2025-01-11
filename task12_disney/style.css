@@ -775,13 +775,13 @@ body{
     margin-top: 40px;
 }
 .footer .content{
-    width: 70%;
+    width: 75%;
     margin:20px auto;
 }
 .footer .content p{
     display: inline-block;
     margin-right: 15px;
-    font-size: 14px;
+    font-size: 13px;
     color: #242424;
     transition: 0.4s;
     line-height: 1.6;
@@ -792,8 +792,9 @@ body{
     color: #2b8fe1;
 }
 .footer .copy-right p{
-    font-size: 13px;
+    font-size: 12px;
     color: #242424;
+    margin: 30px 0 ;
 }
 @media (max-width:545px) {
     .footer .content{width: 90%; }
